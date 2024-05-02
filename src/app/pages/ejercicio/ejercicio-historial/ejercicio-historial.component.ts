@@ -24,15 +24,15 @@ export class EjercicioHistorialComponent implements OnInit{
     primeraMedia = 0
     showSpinner = true
     userId: any = localStorage.getItem('userId')
-    constructor(private route: ActivatedRoute, private router: Router, private service: Service, private spinner: NgxSpinnerService){}
+    constructor(private route: ActivatedRoute, private router: Router, private service: Service){}
 
     ngOnInit() {
-        this.spinner.show()
+        
         this.ejercicio = this.route.snapshot.queryParamMap.get('ejercicio');
         console.log(this.ejercicio)
 
         this.service.getEjercicios(this.userId, this.ejercicio!).subscribe((response: any) => {
-            this.spinner.show()
+           
             console.log(response)
             this.ejercicios2 = response
             let timeData = []
@@ -68,7 +68,7 @@ export class EjercicioHistorialComponent implements OnInit{
                 }
             ]
         };
-        this.spinner.hide()
+       
         this.showSpinner = false
           })
 
@@ -147,7 +147,7 @@ export class EjercicioHistorialComponent implements OnInit{
     }
     
     public spinnerTest() {
-        this.spinner.show()
+       
     }
 
 }

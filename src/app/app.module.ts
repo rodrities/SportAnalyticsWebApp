@@ -38,7 +38,6 @@ import { EjercicioHistorialComponent } from './pages/ejercicio/ejercicio-histori
 import { ChartModule } from 'primeng/chart';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { KnobModule } from 'primeng/knob';
-import { NgxSpinnerModule } from 'ngx-spinner';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { DialogModule } from 'primeng/dialog';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
@@ -80,7 +79,6 @@ import { EjerciciosComponent } from './pages/ejercicios/ejercicios/ejercicios.co
     ChartModule,
     SelectButtonModule,
     KnobModule,
-    NgxSpinnerModule,
     ProgressSpinnerModule,
     DialogModule,
     ConfirmPopupModule,
