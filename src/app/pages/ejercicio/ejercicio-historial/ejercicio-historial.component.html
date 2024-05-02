@@ -1,0 +1,60 @@
+<app-header></app-header>
+<div class="spinner" *ngIf="showSpinner">
+    <p-progressSpinner ariaLabel="loading"></p-progressSpinner>
+</div>
+<div class="main-container">
+    <div class="white-screen">
+<h2 class="titulo">Estadisticas históricas del Ejercicio: </h2>
+<div class="up-container">
+    <h2 class="titulo">{{ejercicio}}</h2>
+    
+</div>
+<div class="up-container2">
+    <div class="text-container">
+        <h3 class="titulo mejor ">Mejor Tiempo</h3>
+        <h3 class="titulo mejor">{{mejorTiempo}}</h3>
+    </div>
+    <div class="text-container">
+        <h3 class="titulo peor">Peor Tiempo</h3>
+        <h3 class="titulo peor">{{peorTiempo}}</h3>
+    </div>
+    <div class="text-container">
+        <h3 class="titulo">Media</h3>
+        <h3 class="titulo">{{media.toFixed(2)}}</h3>
+    </div>
+   
+</div>
+<div class="container3">
+    <p-table [scrollable]="true" scrollHeight="50vh" [value]="serieList" styleClass="p-datatable-gridlines"[tableStyle]="{ 'width': '90%', 'margin-left': '5%', 'margin-top': '4%' }">
+        
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Fecha</th>
+                <th>Tiempo</th>
+                <th>Frecuencia Cardiaca</th>
+                <th>Velocidad</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-serie>
+            <tr>
+                <td>28/04/2024</td>
+                <td class="peor" *ngIf="serie.tiempo > media">{{ serie.tiempo }} ▲</td>
+                <td class="mejor" *ngIf="serie.tiempo < media" >{{ serie.tiempo }} ▼</td>
+                <td>{{ serie.fre_cardiaca }}</td>
+                <td> {{serie.velocidad }}</td>
+            </tr>
+        </ng-template>
+        
+    </p-table>
+</div>
+<div class="grafica-container">
+    <div class="grafica-container2">
+        <p-chart type="line" [data]="data" [options]="options" height="90%"  ></p-chart>
+    </div>
+</div>
+<div class="bot-container">
+    <h3 class="titulo mejor">Mejora de Tiempo</h3>
+        <h3 class="titulo mejor" >{{ (primeraMedia - media).toFixed(2)}}</h3>
+</div>
+</div>
+</div>

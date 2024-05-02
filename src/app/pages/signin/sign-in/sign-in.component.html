@@ -1,0 +1,85 @@
+<div class="login-container">
+    <div class="login-img-container">
+      <img alt="" src="assets/login.jpeg" height="100%">
+    </div>
+    <div class="right-container">
+        <div class="title-container">
+            <h1>SportAnalytics</h1>
+        </div>
+    <mat-card class="form-container">
+      <mat-card-header>
+        <mat-card-title>Sign In</mat-card-title>
+      </mat-card-header>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-card-content>
+          <mat-form-field appearance="outline" class="form-field">
+            <mat-label >Email</mat-label>
+            <input  matInput
+                    formControlName="email"
+                    type="email"
+                    placeholder="Ex. username@example.com"
+                    required>
+            
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="form-field">
+            <mat-label>Password</mat-label>
+            <input matInput
+                   formControlName="password"
+                   type="password"
+                   placeholder="Password"
+                   required
+                   minlength="6">
+            
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="form-field">
+            <mat-label>Nombre</mat-label>
+            <input matInput
+                   formControlName="name"
+                   
+                   placeholder="Name"
+                   required
+                   >
+            
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="form-field">
+            <mat-label>Edad</mat-label>
+            <input matInput
+                   formControlName="age"
+                   
+                   placeholder="Password"
+                   >
+            
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="form-field">
+            <mat-label>Altura</mat-label>
+            <input matInput
+                   formControlName="height"
+                   
+                   placeholder="Password"
+                   
+                  >
+            
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="form-field">
+            <mat-label>Peso</mat-label>
+            <input matInput
+                   formControlName="weight"
+                   
+                   placeholder="Password"
+                   >
+            
+          </mat-form-field>
+          <p-selectButton class="toggle" [options]="paymentOptions" [(ngModel)]="value"  optionLabel="name" optionValue="value"></p-selectButton>
+        </mat-card-content>
+        <mat-card-actions >
+          <div class="container-actions">
+            <button class="button-login"  mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Create</button>
+          </div>
+        </mat-card-actions>
+        
+      </form>
+    </mat-card>
+</div>
+  </div>
+  
+  

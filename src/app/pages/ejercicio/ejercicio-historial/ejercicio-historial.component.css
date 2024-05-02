@@ -1,0 +1,126 @@
+.grafica-container {
+    margin-top: 3%;
+    margin-left: 1%;
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border-radius: 40px;
+    border: 1px solid #00B69D;
+}
+
+.grafica-container2 {
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+   
+}
+
+.titulo {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.main-container {
+    background-color: #00B69D;
+    height: 92vh;
+    width: 88vw;
+    margin-left: 12vw;
+    
+    border: 1px solid #00B69D;
+    padding: 0;
+}
+
+.white-screen {
+    padding: 0;
+    border-radius: 45px;
+    background-color: #F8F9FA;
+    height: 90vh;
+    width: 86vw;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    border: 1px solid white;
+}
+
+.up-container {
+    position: absolute;
+    width: 19.5%;
+    height: 10%;
+    background-color: white;
+    top: 14%;
+    left: 45%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.up-container2 {
+    position: absolute;
+    width: 30%;
+    height: 14%;
+    background-color: white;
+    top: 14%;
+    left: 67%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bot-container {
+    position: absolute;
+    width: 19.5%;
+    height: 10%;
+    background-color: white;
+    top: 84%;
+    left: 45%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container3 {
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    background-color: white;
+    top: 34%;
+    left: 67%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.up-container2 h3 {
+    font-size: 23px;
+}
+
+::ng-deep .p-chart {
+    height: 50% !important;
+    width: 100% !important;
+}
+
+.mejor {
+    color: #218B1B;
+}
+.peor {
+    color: #7D2D1B;
+}
+
+.spinner {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}

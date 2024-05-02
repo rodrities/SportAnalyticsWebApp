@@ -1,0 +1,124 @@
+.container {
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 70%;
+    height: 55%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.titulo {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+.main-container {
+    background-color: #00B69D;
+    height: 92vh;
+    width: 88vw;
+    margin-left: 12vw;
+    
+    border: 1px solid #00B69D;
+    padding: 0;
+}
+
+.white-screen {
+    padding: 0;
+    border-radius: 45px;
+    background-color: #F8F9FA;
+    height: 90vh;
+    width: 86vw;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    border: 1px solid white;
+}
+
+.timeline-container {
+    padding-top: 1%;
+    height: 90%;
+    width: 30%;
+    background-color: white;
+ 
+    border-radius: 40px;
+}
+
+.table-container {
+    height: 90%;
+    width: 65%;
+    background-color: white;
+ 
+    border-radius: 40px;
+}
+
+.bot-container {
+    margin-top: 0;
+    height: 30%;
+    width: 90%;
+    padding: 0;
+    margin-left: 5%;
+    display: flex;
+   
+}
+
+.box {
+    padding: 0;
+    margin-top: 1%;
+    margin-right: 3%;
+    height: 80%;
+    width: 18%;
+    background-color: white;
+    border-radius: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+}
+
+.box-title {
+margin: 0;
+color: #00B69D;
+}
+.box-data {
+    margin: 0;
+}
+
+::ng-deep .p-timeline-event-marker {
+    border: #00B69D 2px solid !important;
+}
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.up-container {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    background-color: white;
+    top: 14%;
+    left: 35%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+::ng-deep .p-button{
+    border-radius: 20px;
+    background-color: #00B69D;
+    border: #00B69D 1px solid;
+}
+
+::ng-deep .p-button:hover{
+    
+    background-color: white !important;
+    border: #00B69D 1px solid !important;
+    color: #00B69D !important;
+}

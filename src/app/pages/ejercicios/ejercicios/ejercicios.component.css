@@ -1,0 +1,159 @@
+html, h4, *{
+    font-family: "Bebas Neue", sans-serif;
+}
+.spinner {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+.main-container {
+    background-color: #00B69D;
+    height: 92vh;
+    width: 88vw;
+    margin-left: 12vw;
+    
+    border: 1px solid #00B69D;
+    padding: 0;
+}
+
+.white-screen {
+    padding: 0;
+    border-radius: 45px;
+    background-color: #F8F9FA;
+    height: 90vh;
+    width: 86vw;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    border: 1px solid white;
+}
+
+.card-container {
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 40%;
+    height: 40%;
+    border: 3px solid blue;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-container h3 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center
+}
+
+.container {
+    width: 60%;
+    height: 60%;
+    
+    margin-left: 5%;
+    margin-top: 3%;
+   
+    background-color: white;
+    border-radius: 25px;
+}
+
+.no-rutina {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 5%;
+}
+
+.titulo {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.info-container {
+    width: 15vw;
+    height: 60vh;
+    background-color: #00B69D;
+    position: absolute;
+    right: 7vw;
+    
+    bottom: 0;
+    border-radius: 25px 25px 0 0;
+}
+
+.aux {
+    width: 2vw;
+    height: 5vh;
+    position: absolute;
+    background-color: #00B69D;
+    bottom: 0;
+    right: 22vw;
+}
+.aux2 {
+    width: 2vw;
+    height: 5vh;
+    position: absolute;
+    background-color: #F8F9FA;
+    bottom: .9vh;
+    right: 22vw;
+    border-radius: 0 0  40px 0;
+}
+.aux3 {
+    width: 2vw;
+    height: 5vh;
+    position: absolute;
+    background-color: #00B69D;
+    bottom: 0;
+    right: 5vw;
+}
+.aux4 {
+    width: 2vw;
+    height: 5vh;
+    position: absolute;
+    background-color: #F8F9FA;
+    bottom: .9vh;
+    right: 5vw;
+    border-radius: 0 0  0 40px ;
+}
+
+.knob-container {
+    height: 50%;
+    width: 90%;
+    background-color: #F8F9FA;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10%;
+}
+ 
+h4 {
+    font-size: 20px;
+}
+
+::ng-deep .p-button{
+    border-radius: 20px;
+    background-color: #00B69D;
+    border: #00B69D 1px solid;
+}
+
+::ng-deep .p-button:hover{
+    
+    background-color: white !important;
+    border: #00B69D 1px solid !important;
+    color: #00B69D !important;
+}

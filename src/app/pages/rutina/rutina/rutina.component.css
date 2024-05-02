@@ -1,0 +1,248 @@
+.rutina-container {
+    margin-left: 30%;
+    margin-top: 5%;
+    width: 40%;
+    height: 70%;
+   
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ejercicio-container {
+   
+    width: 60%;
+}
+
+.ejercicio-container h2 {
+   text-align: center;
+}
+
+.container {
+    width: 60%;
+    height: 60%;
+    
+    margin-left: 5%;
+    margin-top: 3%;
+   
+    background-color: white;
+    border-radius: 25px;
+}
+.titulo {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+html, h4, *{
+    font-family: "Bebas Neue", sans-serif;
+}
+.main-container {
+    background-color: #00B69D;
+    height: 92vh;
+    width: 88vw;
+    margin-left: 12vw;
+    
+    border: 1px solid #00B69D;
+    padding: 0;
+}
+
+.white-screen {
+    padding: 0;
+    border-radius: 45px;
+    background-color: #F8F9FA;
+    height: 90vh;
+    width: 86vw;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    border: 1px solid white;
+}
+
+.button-login {
+    background-color: #00B69D
+}
+
+.container21 {
+    position: absolute;
+    width: 12%;
+    height: 8%;
+    background-color: #00B69D;
+     
+    top: 15%;
+    left: 28%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container22{
+    position: absolute;
+    width: 12%;
+    height: 8%;
+    background-color: #00B69D;
+     
+    top: 15%;
+    left: 42%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container23 {
+    position: absolute;
+    width: 12%;
+    height: 8%;
+    background-color: #00B69D;
+     
+    top: 15%;
+    left: 56%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon21 {
+    width: 20%;
+    height: 60%;
+    background-image: url("/assets/running.png");
+    background-size:cover;
+    
+}
+.icon22 {
+    width: 20%;
+    height: 60%;
+    background-image: url("/assets/hourglass.png");
+    background-size:cover;
+    
+}
+.icon23 {
+    width: 20%;
+    height: 60%;
+    background-image: url("/assets/calendar.png");
+    background-size:cover;
+    
+}
+
+.items-container h2{ 
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container3 {
+    position: absolute;
+    width: 26%;
+    height: 60%;
+    background-color: white;
+     
+    top: 14%;
+    left: 71%;
+    border-radius: 25px;
+    
+}
+.container4 {
+    position: absolute;
+    width: 26%;
+    height: 28%;
+    background-color: white;
+     
+    top: 54%;
+    left: 71%;
+    border-radius: 25px;
+    
+}
+.row-container {
+    display: flex;
+    height: 28%;
+    width: 100%;
+    
+    margin-top: 5%;
+}
+.icon-container {
+    width: 50%;
+    height: 90%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.circle {
+    width: 25%;
+    height: 46%;
+    background-color: #00B69D;
+    border-radius: 50px;
+   
+}
+.circle-icon31 {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    background-image: url("/assets/thermometer.png");
+    background-size: cover;
+}
+.circle-icon32 {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    background-image: url("/assets/humidity .png");
+    background-size: cover;
+}
+.circle-icon33 {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    background-image: url("/assets/resilience.png");
+    background-size: cover;
+}
+.circle-icon34 {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    background-image: url("/assets/heartbeat.png");
+    background-size: cover;
+}
+.circle-icon35 {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    background-image: url("/assets/clock.png");
+    background-size: cover;
+}
+.circle-icon36 {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    background-image: url("/assets/rest.png");
+    background-size: cover;
+}
+.text-container {
+    
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-container h2 {
+   padding: 0;
+   margin: 0;
+   font-family: "Bebas Neue", sans-serif;
+}

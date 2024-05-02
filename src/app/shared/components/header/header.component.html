@@ -1,0 +1,52 @@
+<!--<mat-toolbar class="container-bar" color="primary">
+    <mat-toolbar-row>
+      <button mat-button >
+        <mat-icon>settings</mat-icon>
+      </button>
+      <span>Sport Analytics</span>
+      <span class="default-spacer"></span>
+      <button mat-icon-button>
+        <a  [routerLink]="['/home']"><mat-icon [routerLink]="['/home']" routerLinkActive="active">home</mat-icon></a>
+      </button>
+      <span class="default-spacer"></span>
+      <div class="menu-bar">
+       
+        <a mat-flat-button color="primary" routerLink="/routines" routerLinkActive="active">Routines</a>
+
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+-->
+  <div class="top-bar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="" height="140%">
+    </div>
+    <div class="user">
+      <img src="assets/user.png" alt="" height="140%">
+      <h2>{{username}}</h2>
+      <div class="logout-container"><a href="/">
+        <img class="logout" src="assets/logout.png" alt="" height="100%">
+      </a>
+        
+      </div>
+      
+    </div>
+  </div>
+  <div class="left-bar">
+    <div class="menu-container">
+      <a class="item-container" href="/home"><div class="item2">
+        <h3>Rutinas</h3>
+      </div></a>
+      <div class="item">
+        <h3>Ejercicios</h3>
+      </div>
+      <div class="item">
+        <h3>Progreso</h3>
+      </div>
+      <div class="item">
+        <h3>Perfil</h3>
+      </div>
+    </div>
+    
+    
+  </div>

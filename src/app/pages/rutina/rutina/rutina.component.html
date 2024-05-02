@@ -1,0 +1,147 @@
+<app-header></app-header>
+
+<div class="main-container">
+    <div class="white-screen">
+        <h2 class="titulo">Tu Rutina: </h2>
+<div class="container">
+    <p-table [scrollable]="true" scrollHeight="50vh" [value]="rutina.rutina_ejercicios" styleClass="p-datatable-gridlines" [tableStyle]="{ 'width': '90%', 'margin-left': '5%', 'margin-top': '2%' }">
+        <!-- <ng-template pTemplate="caption"> ESTADO: {{rutina.estado}} </ng-template>-->
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Nro</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+                <th>Tipo</th>
+                <th>Descripción</th>
+                
+                <th>F. Cardiaca</th>
+                <th>Velocidad</th>
+                <th>Tiempo</th>
+                
+            </tr>
+        </ng-template>
+        
+    
+        <ng-template pTemplate="body" let-e let-i="index">
+            <tr>
+                <td>{{ rutina.rutina_ejercicios.indexOf(e) + 1}}°</td>
+                <td>{{ e.ejercicio.nombre }}</td>
+                <td>
+                    <button *ngIf="e.ejercicio.tipo == 'sprints'" class="button-login" mat-raised-button color="primary"  (click)="verDetalle(e)"  >Detalle</button>
+                </td>
+                <td><p-tag [value]="e.ejercicio.tipo" [severity]="getSeverity(e.ejercicio.tipo)"></p-tag></td>
+                
+                <td>
+                    {{ e.ejercicio.descripcion }}
+                   
+                    
+                    <ng-container *ngIf="e.intensidad !== null">
+                        Intensidad: {{ e.intensidad }} 
+                     </ng-container>
+                        <ng-container *ngIf="e.cantidad_series !== null">
+                           - {{ e.cantidad_series }} series
+                        </ng-container>
+                      
+                      
+                </td>
+                <td *ngIf="e.series.length > 0">{{ e.series[0].fre_cardiaca }}</td>
+                <td *ngIf="e.series.length > 0">{{ e.series[0].velocidad }}</td>
+                <td *ngIf="e.series.length > 0">{{ e.series[0].tiempo }}</td>
+                
+            </tr>
+        </ng-template>
+        
+    </p-table>
+
+</div>
+<div class="items-container container21">
+    <div class="icon21"></div>
+    <div class="text-container">
+        <h2>Objetivo: </h2>
+        <h2>100m </h2>
+    </div>
+    
+</div>
+<div class="items-container container22">
+    <div class="icon22"></div>
+    <div class="text-container">
+        <h2>Estado: </h2>
+        <h2>Completa </h2>
+    </div>
+    
+</div>
+<div class="items-container container23">
+    <div class="icon23"></div>
+    <div class="text-container">
+        <h2>Fecha: </h2>
+        <h2>27/04/2024 </h2>
+    </div>
+    
+</div>
+<div class="container3">
+    <div class="row-container">
+        <div class="icon-container">
+            <div class="circle">
+                <div class="circle-icon31"></div>
+            </div>
+            <div class="text-container">
+                <h2>Temperatura</h2>
+                <h2>30C</h2>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="circle">
+                <div class="circle-icon32"></div>
+            </div>
+            <div class="text-container">
+                <h2>Humedad</h2>
+                <h2>30C</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row-container">
+        <div class="icon-container">
+            <div class="circle">
+                <div class="circle-icon33"></div>
+            </div>
+            <div class="text-container">
+                <h2>Presión</h2>
+                <h2>30C</h2>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="circle">
+                <div class="circle-icon34"></div>
+            </div>
+            <div class="text-container">
+                <h2>Frecuencia Cardiaca</h2>
+                <h2>30C</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row-container">
+        <div class="icon-container">
+            <div class="circle">
+                <div class="circle-icon35"></div>
+            </div>
+            <div class="text-container">
+                <h2>Tiempo Total</h2>
+                <h2>30C</h2>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="circle">
+                <div class="circle-icon36"></div>
+            </div>
+            <div class="text-container">
+                <h2>Descanso Total</h2>
+                <h2>30C</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div></div>
+

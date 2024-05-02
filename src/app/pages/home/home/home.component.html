@@ -1,0 +1,52 @@
+<app-header></app-header>
+<div class="spinner" *ngIf="showSpinner">
+    <p-progressSpinner ariaLabel="loading"></p-progressSpinner>
+</div>
+<div class="main-container">
+    <div class="white-screen">
+        <h2 class="titulo">Tus Rutinas: </h2>
+        <div *ngIf="rutinas.length == 0" class="no-rutina">
+            <h2 class="titulo">No tienes rutinas </h2>
+            <button class="button-login" mat-raised-button color="primary" (click)="generarRutina()"  >Generar Rutina</button>
+        </div>
+        <div class="container">
+        
+            
+            
+            <p-table [scrollable]="true" scrollHeight="50vh" [value]="rutinas" [tableStyle]="{ 'width': '90%', 'margin-left': '5%', 'margin-top': '2%' }">
+                
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                        
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-rutina>
+                    <tr>
+                        <td>{{ rutina.fecha }}</td>
+                        <td>{{ rutina.estado }}</td>
+                        <td>
+                            <button class="button-login" mat-raised-button color="primary" (click)="verDetalle(rutina)"  >Detalle</button>
+                        </td>
+                        
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+        <div class="info-container">
+            <div class="knob-container">
+                <p-knob [(ngModel)]="rutinas.length" [size]="200" [min]="0" [max]="30" valueColor="#00B69D" ></p-knob>
+                <h4>Rutinas completas este mes</h4>
+            </div>
+            
+        </div>
+        <div class="aux"></div>
+        <div class="aux2"></div>
+        <div class="aux3"></div>
+        <div class="aux4"></div>
+    </div>
+
+</div>
+
