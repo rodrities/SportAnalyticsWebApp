@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { NgxSpinner, NgxSpinnerService } from 'ngx-spinner';
 import { Ejercicio } from 'src/app/shared/Models/Ejercicio';
 import { Serie } from 'src/app/shared/Models/Serie';
 import { Service } from 'src/app/shared/service/service';
