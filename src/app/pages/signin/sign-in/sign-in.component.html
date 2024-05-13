@@ -42,7 +42,7 @@
             
           </mat-form-field>
           <mat-form-field appearance="outline" class="form-field">
-            <mat-label>Edad</mat-label>
+            <mat-label>Edad (años)</mat-label>
             <input matInput
                    formControlName="age"
                    
@@ -51,7 +51,7 @@
             
           </mat-form-field>
           <mat-form-field appearance="outline" class="form-field">
-            <mat-label>Altura</mat-label>
+            <mat-label>Altura (cm)</mat-label>
             <input matInput
                    formControlName="height"
                    
@@ -61,7 +61,7 @@
             
           </mat-form-field>
           <mat-form-field appearance="outline" class="form-field">
-            <mat-label>Peso</mat-label>
+            <mat-label>Peso (kg)</mat-label>
             <input matInput
                    formControlName="weight"
                    
@@ -69,11 +69,14 @@
                    >
             
           </mat-form-field>
+          <form [formGroup]="formGroup2">
           <p-selectButton class="toggle" [options]="paymentOptions" [(ngModel)]="value"  optionLabel="name" optionValue="value"></p-selectButton>
+        </form>
         </mat-card-content>
         <mat-card-actions >
           <div class="container-actions">
-            <button class="button-login"  mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Create</button>
+            <button class="button-login"  mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid "
+            >Create</button>
           </div>
         </mat-card-actions>
         
